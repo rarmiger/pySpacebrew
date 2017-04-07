@@ -68,8 +68,8 @@ class Spacebrew(object):
 		d = {'config':{
 			'name':self.name,
 			'description':self.description,
-			'publish':{'messages':pubs},
-			'subscribe':{'messages':subs},
+			'publish':{'messages':list(pubs)},
+			'subscribe':{'messages':list(subs)},
 			}}
 		return d
 
